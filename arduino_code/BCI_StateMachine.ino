@@ -15,12 +15,16 @@ void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
     pinMode(RELAY_PIN, OUTPUT);
     pinMode(LED_INDICATOR_PIN, OUTPUT);
+    digitalWrite(LED_INDICATOR_PIN, LOW);
     Serial.println("<Arduino is ready>");
 }
 
 void loop() {
+  // For communicating with OpenBCI
     recvWithEndMarker();
     showNewData();
+
+  // For communciating over serial command using "1" and "0"
     // demoInput();
     // showNewDataDemo();
 }
