@@ -24,7 +24,7 @@ void loop() {
     recvWithEndMarker();
     showNewData();
 
-  // For communciating over serial command using "1" and "0"
+  // For communciating over serial command using "1" and "0" as a manner of debugging functionality
     // demoInput();
     // showNewDataDemo();
 }
